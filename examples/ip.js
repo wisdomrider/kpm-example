@@ -18,7 +18,7 @@ function ip() {
 
 const info = {
     name: "My Ip",
-    description: "MyIP gives information about your current ip address.",
+    description: "MyIP gives information about your current ip address.\ntype [kpm myip] to get information about your ip.",
     version: 1,
     alias: 'myip',
     author: "wisdomrider",
