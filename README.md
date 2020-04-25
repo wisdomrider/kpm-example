@@ -25,6 +25,14 @@ then copy paste the template.js into your modulename.js and start making modules
 ##### module.exports should always point to information of module
 
 ---
+### Some Tips
+
+- all the necessary utils required for creating modules are located in [kivia modules](https://github.com/wisdomrider/kiviamodules) [contribute for more utils] 
+- undefined is used for default command of the module example if your module name is kpm then if you pass a undefined json key with parameters as [ip.js](https://github.com/wisdomrider/kpm-example/blob/master/examples/ip.js#L27) then if user type kpm without any args or command then it will be pointed to given function
+- exclude can be used in some commands to exclude a command information in help as shown in [ip.js](https://github.com/wisdomrider/kpm-example/blob/master/examples/ip.js#L27)
+
+
+---
 Watch the example modules located in examples folder for more information:
 
 - ip.js [ip checker module]
