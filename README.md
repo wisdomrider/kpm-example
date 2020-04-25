@@ -10,4 +10,6 @@ Now install a module named dev using
 
 After installing dev module you can acess developer module using `kpm dev`
 
-Then clone this repository 
+Then clone this repository and watch the example modules:
+
+- index.js [ip checker module]
