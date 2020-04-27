@@ -61,7 +61,15 @@ function weather() {
 }
 
 function parseLocation(json) {
-    console.log(json);
+    const data = {};
+    print(chalk.yellow(`\n Weather of ${json.name} :`))
+    data.temperature = `${Math.round(json.main.temp - 273)}°C`
+    data.humidity = `${json.main.humidity} %`;
+    data.pressure = `${json.main.pressure} hpa`;
+    data.wind = `${json.wind.speed} km/h`
+    data.sunrise = `${new Date(json.sys.sunrise * 1000)}`
+    data.sunset = `${new Date(json.sys.sunset * 1000)}`
+    kivia.makeItem(data)
 }
 
 function regenerate() {
